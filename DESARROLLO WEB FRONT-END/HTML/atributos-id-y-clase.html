@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .c1 {
+      color: red;
+    }
+    .c2 {
+      color: blue;
+    }
+  </style>
+</head>
+<body>
+
+  <p id="p1" class="c1">Texto del párrafo 1</p>
+  <p id="p2" class="c1">Texto del párrafo 2</p>
+  <p id="p3" class="c2">Texto del párrafo 3</p>
+  <p>Este <strong>texto</strong> está en negrita.</p>
+
+
+  <button onclick="cambiarTexto()">Cambiar texto del p1</button>
+
+  <script>
+    function cambiarTexto() {
+      document.getElementById("p1").innerText = "Texto cambiado con JavaScript";
+    }
+  </script>
+
+</body>
+</html>
